@@ -1,0 +1,232 @@
+4.12.1
+======
+- Feature: Include an expression evaluation prefixed by '='
+- Dependence: ExprEval - Expression Evaluation Library V2.0
+  (from Brian Allen Vanderburg II)
+
+4.12.0
+======
+- Fix build problems.
+- Add support for AppData.
+- Translation updates: Arabic, Asturian, Bulgarian, Chinese (China),
+  Croatian, Czech, Danish, Dutch (Flemish), English (Australia), Finnish,
+  French, German, Hebrew, Hungarian, Icelandic, Indonesian, Italian,
+  Korean, Malay, Norwegian Bokmål, Polish, Portuguese,
+  Portuguese (Brazilian), Romanian, Russian, Serbian, Slovak, Slovenian,
+  Spanish, Swedish, Telugu, Thai, Turkish, Ukrainian, Vietnamese
+
+4.11.0
+======
+- Make compilation to GTK3 optional.
+- Use GDbus for communication.
+- Add execute menu item to launch without closing the window.
+- Add default action to open absolute paths.
+- Add bookmarks in the model.
+- Do nothing with the Tab event during competion (bug #10187).
+- Use new xdg function to set environment.
+- Translation updates: Amharic, Arabic, Belarusian, Bulgarian,
+  Bengali (India), Catalan (Valencian), Czech, Danish, German,
+  Dzongkha, Greek, English (Australia), English (United Kingdom),
+  Spanish (Castilian), Estonian, Basque, Persian, Finnish, French,
+  Galician, Gujarati, Croatian, Hungarian, Armenian, Indonesian,
+  Icelandic, Italian, Japanese, Georgian, Kazakh, Korean, Kurdish,
+  Lithuanian, Macedonian, Marathi, Malay, Dutch (Flemish), Norwegian
+  Nynorsk, Occitan (post 1500), Polish, Portuguese, Portuguese
+  (Brazilian), Romanian, Russian, Slovak, Slovenian, Serbian, Swedish,
+  Thai, Turkish, Uyghur, Ukrainian, Chinese (China), Chinese (Hong
+  Kong), Chinese (Taiwan).
+
+4.10.0
+======
+- Add a valid category to xfce4-run.desktop.
+- Fix property-changed matching.
+- Avoid a single category if the root menu has a directory.
+- Avoid segfault when right-clicking a custom command.
+- Only focus view if an item is selected on entry active.
+- Try to spwan a custom command in expanded view as well.
+- Translation updates: Czech, German, English (United Kingdom),
+  Spanish (Castilian), Galician, Hungarian, Japanese, Korean, Dutch
+  (Flemish), Portuguese (Brazilian), Romanian, Turkish, Chinese
+  (China), Chinese (Taiwan).
+
+4.9.5
+=====
+- Don't use deprecated g_mapped_file_free (bug #8649).
+- Bump gtk, glib and xfce dependencies.
+- Make launch button translatable.
+- Translation updates: Catalan (Valencian), Danish, German, Greek,
+  Basque, Finnish, French, Galician, Croatian, Italian, Japanese,
+  Kazakh, Korean, Lithuanian, Dutch (Flemish), Norwegian Nynorsk,
+  Polish, Portuguese, Portuguese (Brazilian), Russian, Slovak, Turkish,
+  Ukrainian, Chinese (China).
+
+4.9.4
+=====
+- Add Help button to preferences dialog.
+- Make sure the header icon does not shrink (bug #8489).
+- Set single line label for icon sizes < "small" (bug #8490).
+- Add option to disable the background service.
+- Block maximize and fullscreen in collapsed mode (bug #8491).
+- Chain-up unmap.
+- Translation updates (ar, ca, cs, da, de, es, eu, fi, fr, hu, id, it,
+  kk, ko, lt, nl, nn, pl, pt, pt_BR, ru, sk, sv, tr, uk, zh_CN, zh_TW).
+
+4.9.3
+=====
+- Start in collapsed mode if xfrun4 symlink is used.
+- Select entry when Ctrl+L is pressed.
+- Quit the mainloop when receiving an exit signal.
+- Avoid xfconf error when closing windows on quit.
+- Add icon view mode and add preferences to set icon sizes.
+- Only show categories with items.
+- Add keybinds to switch modes (Ctrl-1 and Ctrl-2).
+- Improve reloading of items and directories.
+- Add popup menu to edit, hide and revert desktop files.
+- Add refcount debugging.
+- Remove xfrun from the utility menu.
+- Fix some segfaults.
+- Translation updates (ar, ca, cs, da, de, eu, fr, hu, is, it, kk,
+  ko, nl, pl, pt_BR, ru, te, zh_CN).
+
+4.9.2
+=====
+- Add option to save custom command matches.
+- Insert and reload history command in model.
+- Change treeview filter prio to avoid window resize.
+- Add left/right navigation to the treeviews.
+- Add a custom completion match function.
+- Use long option, looks better in code completion.
+- Drop usage of new Gdk keycode api (bug #8044).
+- Translation updates (de, et, eu, fr, hr, it, kk, ko, nl, sk,
+  uk, zh_CN, zh_TW).
+
+4.9.1
+=====
+- Fix launching in collapsed mode.
+- Don't ignore arguments of the desktop file command.
+- Always allow up/down unless the completion menu is shown.
+- Fix segfault when loading default actions.
+- Translation updates (da, uk, pt_BR, sk, ar, zh_TW, hr, nl).
+
+4.9.0
+=====
+- Rewrite of the the application finder to merge the functionality
+  of the appfinder as we know it in 4.8 and xfrun4 (start with
+  --collapsed).
+
+4.8.0
+=====
+- Translation updates: French, Romanian.
+
+4.7.2
+=====
+- Translation updates (pt, ja, he, lt, zh_CN, pt_BR, sk, cs,
+  en_GB, nb, hr, pl, ar).
+
+4.7.1
+=====
+- Don't watch category changes in xfconf (bug #6043).
+- Launch items with startup notification.
+- Implement monitoring by reloading all contents on menu change events.
+- Translation updates (ug, de, ru, kk, zh_TW, pt, it, da, uk, ja,
+  el, fi, sv, gl, ca, eu, hu).
+
+4.7.0
+=====
+- Remove deprecated encoding key from desktop file.
+- Build ChangeLog from GIT and use XDT 4.7.2.
+- Rename "Execute" button to "Launch".
+- Port the libxfce4menu code to garcon.
+- Use Gtk api for entry icon, if available.
+- Port to libxfce4ui and gio.
+- Rework the tooltip string code a little.
+- Don't use startup notification for now.
+- Translation updates (gl, lv, ro, hu, ast, kk, el, ru, sk, sq, ja,
+  eu, da, pt, cs, zh_CN, ca, fr, sv, es, pt_BR, nl, fi, it, uk, de, he).
+
+4.6.2
+=====
+- Build fixes for GIT.
+- Properly propagate the focus-in-event of the search entry (bug #5883).
+- Translation updates (es, gl, hu, id, it, pl, pt, tr, lv, ur, ur_PK,
+  ro, sq, sk, nl, kk, ug).
+
+4.6.1
+========
+- Translation updates:
+
+4.6.0
+========
+- Try to load items from xfce-applications.menu before trying
+  applications.menu in order to provide the same items as xfdesktop
+  does (reported by Mark Trompell).
+- Translation updates: gl (Leandro Regueiro), id (Andhika Padmawan),
+  pl (Piotr Sokół), en_GB (Jeff Bailes), tr (Gökmen Görgen, Samed Beyribey),
+  uk (Dmitry Nikitin)
+
+
+4.5.99.1
+========
+- Translation updates: da (Per Kongstad), es (Abel Martín), eu (Piarres
+  Beobide), fr (Jérôme Guelfucci), ja (Masato Hashimoto), nb_NO (Terje
+  Uriansrud), pt_BR (Og Maciel), sv (Alexander Toresson), zh_CN (Hunt
+  Xu, Chris. K. Zhang).
+
+4.5.93
+======
+- Assume "All" category if the current category string is empty (Bug #4613).
+- Review strings.
+- Translation updates: be (Alexander Nyakhaychyk), ca (Carles Muños Gorriz),
+  cs (Michal Varady), da (Lars Nielsen), de (Fabian Nowak, Jannis Pohlmann),
+  el (Stavros Giannouris), es (Abel Martín), eu (Piarres Beobide), fi (Jari
+  Rahkonen), gl (Leandro Regueiro), ja (Nobuhiro Iwamatsu), sv (Daniel
+  Nylander), tr (Eren Turkay), uk (Dimitry Nikitin), zh_CN (Hunt Xu).
+
+4.5.92
+======
+- Fix runtime warnings and toplevel menu items always being displayed
+  on top of every category.
+- Translation updates: Carles Munõz Gorriz (ca), Abel Martín (es),
+  Maximilian Schleiss (fr), Andhika Padmawan (id), Terje Uriansrud (nb_NO).
+
+4.5.91
+======
+- Improved keyboard navigation.
+- Filesystem monitoring support based on thunar-vfs.
+- Remember last window size and category when closing the appfinder.
+- Add search icon to the search entry.
+- Translations updates: Basque, Brazilian Portuguese, Czech, Finnish, German,
+  Japanese, Hungarian, Sinhalese, Spanish.
+
+4.5.90
+======
+- Rewrite based on libxfce4menu.
+- Translations: Amharic, Arabic, Basque, Brazilian Portuguese, British English,
+  Czech, Catalan, Finnish, French, Galician, German, Hungarian, Indonesian,
+  Korean, Latvian, Polish, Portuguese, Sinhala, Slovak, Slovene, Turkish,
+  Ukrainian.
+
+4.4.2
+=====
+- Remove trailing parens on AC_INIT version info to work around bug
+  in intltool 0.35.x and 0.36.x.
+- Updated translations: Nuno Miguel (pt_PT), Dimitri Gogelia (ka),
+  Pablo Vieira (pt_PT), Vladimir Melo (pt_BR), Mişu Moldovan (ro).
+- New translations: Terje Uriansrud (nb_NO), Tegegne Tefera (am),
+  RPrieditis (lv).
+
+
+4.4.1
+=====
+- Updated translations: Alexander Nyakhaychyk (be), Alexander Toresson (sv),
+  Mişu Moldovan (ro), Maximilian Schleiss (fr), Eren Turkay (tr),
+  Jeff Bailes (en_GB), Daichi Kawahata (ja), Nico Schümann (de),
+  Fabio Riga (it), Pau Rul-lan Ferragut (ca).
+- New translations: Besnik Bleta (sq).
+
+
+4.4.0
+=====
+- Add themed icon support (Bug #2651).
+- Fix potential crash (Bug #1882).
+- Several new and updated translations.

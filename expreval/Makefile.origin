@@ -1,0 +1,16 @@
+
+
+LIBNAME:=expreval
+SRC:=$(wildcard *.c)
+CFLAGS=-fPIC -g
+
+all: lib$(LIBNAME).a
+
+clean:
+	rm -f *.o
+
+lib$(LIBNAME).a: $(notdir $(SRC:%.c=%.o))
+	ar rs $@ $?
+
+lib$(LIBNAME).so: $(notdir $(SRC:%.c=%.o))
+	$(CC) -fPIC -shared $? -o $@
